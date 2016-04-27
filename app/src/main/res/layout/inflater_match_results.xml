@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_margin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/small_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="@dimen/standard_margin"
+                    android:text="MATCH RESULT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/orange" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/standard_margin"
+                    android:text="Nov 5,2015 , Kolkata Stadium ,Attendence : 24,155."
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_margin="@dimen/small_margin"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <ImageView
+                        android:id="@+id/logo_fc_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:src="@drawable/fc_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/logo_fc_1"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="Chennaiyin FC"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:id="@+id/logo_fc_2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:src="@drawable/fc_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/logo_fc_2"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="FC Goa"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/logo_fc_2"
+                        android:layout_toRightOf="@+id/logo_fc_1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2 - 0"
+                            android:textColor="@android:color/black"
+                            android:textSize="32sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E9EAED"
+                    android:padding="@dimen/standard_margin">
+
+                    <TextView
+                        android:id="@+id/plyer_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:drawableLeft="@drawable/footbal"
+                        android:drawablePadding="@dimen/small_margin"
+                        android:text="68` Leo Moura ( P )"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sub_header_txt_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/plyer_1"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/plyer_1"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:drawableLeft="@drawable/footbal"
+                        android:drawablePadding="@dimen/small_margin"
+                        android:text="68` Luice ( P )"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sub_header_txt_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

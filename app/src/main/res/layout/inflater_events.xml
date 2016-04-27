@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fixture_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Events Name"
+            android:textSize="@dimen/sub_header_txt_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Events Venue"
+            android:textSize="@dimen/sub_header_txt_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Date"
+            android:textSize="@dimen/sub_header_txt_size" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fixture_header"
+        android:overScrollMode="never" />
+    <!--android:divider="@drawable/divider"
+    android:dividerHeight="1px"-->>
+</RelativeLayout>

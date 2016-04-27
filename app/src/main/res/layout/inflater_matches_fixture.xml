@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fixture_header"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:textSize="@dimen/sub_header_txt_size"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Match"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            android:textSize="@dimen/sub_header_txt_size"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Date"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textSize="@dimen/sub_header_txt_size"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Team"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textSize="@dimen/sub_header_txt_size"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Venue"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_fixture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fixture_header"
+        android:divider="@drawable/divider"
+        android:scrollbars="none"
+        android:overScrollMode="never"></ListView>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:focusableInTouchMode="true" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/splashscreen">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="atkff"
+        android:layout_below="@+id/item_image"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+</RelativeLayout>

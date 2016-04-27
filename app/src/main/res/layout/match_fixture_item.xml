@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/small_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/matches_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/list_item_txt_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:text="25th Oct 2015"
+                android:textSize="@dimen/medium_text_size" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Kerala Blaster FC"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/list_item_txt_size" />
+
+                <TextView
+                    android:id="@+id/vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_team"
+                    android:gravity="center"
+                    android:text="VS" />
+
+                <TextView
+                    android:id="@+id/away_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vs"
+                    android:gravity="center"
+                    android:text="Atletico De Kolkata"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/list_item_txt_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25"
+                android:text="Jawaharlal nehru stadium delhi"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

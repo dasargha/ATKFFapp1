@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/fixture_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="No"
+            android:textSize="@dimen/sub_header_txt_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.56"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Against Teams"
+            android:textSize="@dimen/sub_header_txt_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.30"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Match"
+            android:textSize="@dimen/sub_header_txt_size" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/standard_margin"
+            android:text="Result"
+            android:textSize="@dimen/sub_header_txt_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_footbalteam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/dividerft"
+        android:dividerHeight="1px"
+        android:overScrollMode="never"></ListView>
+</LinearLayout>

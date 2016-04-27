@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="@dimen/standard_margin"
+        card_view:cardBackgroundColor="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fc_logo" />
+
+            <TextView
+                android:id="@+id/eventsname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_image"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:gravity="center"
+                android:text="Blood Donation"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/list_item_txt_size" />
+
+            <TextView
+                android:id="@+id/eventsvenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventsname"
+                android:layout_marginTop="@dimen/small_margin"
+                android:gravity="center"
+                android:text="Kolkata"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/list_item_txt_size" />
+
+            <TextView
+                android:id="@+id/eventsdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventsvenue"
+                android:layout_marginTop="@dimen/small_margin"
+                android:gravity="center"
+                android:text="12 Feb 2015"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sub_header_txt_size" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

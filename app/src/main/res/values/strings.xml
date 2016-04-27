@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ATKFFapp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_news_details">NewsDetails</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="demo">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui posuere blandit.
+        Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</string>
+</resources>
