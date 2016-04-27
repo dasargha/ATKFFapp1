@@ -21,7 +21,7 @@ public class MatchStandingsAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 30;
+        return 15;
     }
 
     @Override
